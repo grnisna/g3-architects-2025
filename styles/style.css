@@ -5,3 +5,36 @@
 *{
   font-family: "Work Sans";
 }
+
+
+/* header section  */
+.header{
+    background-color: antiquewhite;
+    padding: 50px 150px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav >ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    padding: 10px   ;
+
+}
+nav li:hover{
+    border-bottom: 2px solid black;
+}
+nav li a{
+    text-decoration: none;
+}
+
+.nav-title{
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+}
