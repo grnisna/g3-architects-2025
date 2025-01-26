@@ -96,6 +96,7 @@ main{
 .team-img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 
 
 }
@@ -106,7 +107,7 @@ main{
 #quick-list{
 color: gainsboro;
 }
-#features{
+#features, .section-title{
     color: #FF900E;
 }
 .features-para{
@@ -114,12 +115,101 @@ color: gainsboro;
     margin-bottom: 25px;
 }
 
+/* analytis section */
+.analytis{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.analytis-card{
+    border: 1px solid gray;
+    border-radius: 8px;
+    box-shadow: 10px ;
+    margin: 20px 0 ;
+    padding: 10px ;
+    box-shadow: 10px 10px 5px lightblue;
+    
+}
+
+
+.analytis-architect{
+    position: relative;
+
+}
+.analytis-architect img{
+    width: 100%;
+}
+#experience-badge{
+    position: absolute;
+    right: 200px;
+    bottom: 50px;
+}
+
+
+/* some facts  */
+.facts-title{
+    font-size: 2rem;
+}
+.facts-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+
+}
+
+.fact-card{
+    border: 1px solid grey;
+    border-radius: 7px;
+    padding: 30px ;
+    text-align: center;
+}
+.fact-number{
+    font-size: 35px ;
+}
+
+
+/* sponsors */
+
+.our-sponsors{
+    margin: 50px 0 ;
+}
+.sponsor-companies{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 50px;
+}
+.sponsor-companies img{
+    width: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 @media screen  and (max-width:576px) {
     .header{
-        padding:20px;
+        padding:2
+        0px;
     }
     nav{
         flex-direction: column;
@@ -146,11 +236,65 @@ color: gainsboro;
         font-size: 1.2rem;
         margin-bottom: 25px;
     }
+
+    .analytis{
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    
+    .analytis-architect{
+        position: relative;
+    
+    }
+    .analytis-architect img{
+        width: 100%;
+    }
+    #experience-badge{
+        position: absolute;
+        right: 200px;
+        bottom: 50px;
+    }
+
+    .facts-container{
+        margin: 20px;
+        padding: 10px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+    .our-sponsors{
+        margin: 20px 0 ;
+        padding: 20px;
+    }
+    
     
 }
 @media screen and (min-width: 576px) and (max-width:960px) {
     nav{
         flex-direction: column;
-    }    
+    }
+    .features{
+        flex-direction: column;
+        padding: 30;
+        text-align: center;
+        margin: center;
+        
+    }
+
+    .analytis{
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .facts-container{
+        margin: 20px;
+        padding: 10px;
+        flex-direction: column;
+        gap: 30px;
+    }
 }
 
