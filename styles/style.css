@@ -186,6 +186,16 @@ color: gainsboro;
     width: 10%;
 }
 
+.footer{
+    width: 800px ;
+    margin: auto;
+    border: 1px solid rgb(235, 115, 181);
+    border-radius: 8px;
+    height: 30px;
+    text-align: center;
+    padding: 10px 0;
+}
+
 
 
 
